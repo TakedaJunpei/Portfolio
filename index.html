@@ -1,57 +1,237 @@
 <!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111827">
-  <meta name="description" content="竹田准平のポートフォリオ。LaravelによるWebアプリ開発を中心に、小規模な機能追加や既存画面の改善に取り組みます。">
-  <title>竹田 准平 | Web開発ポートフォリオ</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23111827'/%3E%3Cpath d='M20 43V21h11c9 0 13 4 13 11s-4 11-13 11H20zm8-7h3c4 0 6-1 6-4s-2-4-6-4h-3v8z' fill='%23d7ff82'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip" href="#main">本文へ移動</a>
-  <header class="header">
-    <a class="brand" href="#top" aria-label="竹田准平 トップへ"><span class="brand-mark">J.</span><span>JUNPEI TAKEDA</span></a>
-    <nav aria-label="メインナビゲーション"><a href="#work">制作物</a><a href="#skills">できること</a><a href="#tech">技術スタック</a><a href="#about">プロフィール</a></nav>
-  </header>
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="live-dot"></span> WEB DEVELOPMENT / PORTFOLIO</p>
-        <h1>使いやすさまで考えた<br><em>Web開発を。</em></h1>
-        <p class="lead">竹田 准平です。LaravelでのWebアプリ開発を中心に、既存機能の改善や小さな仕組みづくりに取り組んでいます。</p>
-        <div class="hero-actions"><a class="button primary" href="#work">制作物を見る <span aria-hidden="true">↗</span></a><a class="button secondary" href="#contact">ご相談について <span aria-hidden="true">↓</span></a></div>
-      </div>
-      <div class="hero-art" aria-label="Webアプリの構成を表す装飾図">
-        <div class="art-grid"></div>
-        <div class="art-label top">BUILD WITH PURPOSE</div>
-        <div class="art-window"><div class="window-bar"><i></i><i></i><i></i><span>lifelog / app</span></div><div class="window-content"><span class="window-small">01 — PROJECT</span><strong>LifeLog</strong><div class="window-line wide"></div><div class="window-line"></div><div class="window-cards"><div><b>01</b><small>閲覧</small></div><div><b>02</b><small>投稿</small></div><div><b>03</b><small>分類</small></div></div></div></div>
-        <div class="art-label bottom">LARAVEL <span>●</span> MYSQL <span>●</span> UI</div>
-      </div>
-    </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111827" />
+    <meta
+      name="description"
+      content="竹田准平のポートフォリオ。LaravelによるWebアプリ開発を中心に、小規模な機能追加や既存画面の改善に取り組みます。"
+    />
+    <title>竹田 准平 | Web開発ポートフォリオ</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23111827'/%3E%3Cpath d='M20 43V21h11c9 0 13 4 13 11s-4 11-13 11H20zm8-7h3c4 0 6-1 6-4s-2-4-6-4h-3v8z' fill='%23d7ff82'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">本文へ移動</a>
+    <header class="header">
+      <a class="brand" href="#top" aria-label="竹田准平 トップへ"
+        ><span class="brand-mark">J.</span><span>JUNPEI TAKEDA</span></a
+      >
+      <nav aria-label="メインナビゲーション">
+        <a href="#work">制作物</a><a href="#skills">できること</a
+        ><a href="#tech">技術スタック</a><a href="#about">プロフィール</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="live-dot"></span> WEB DEVELOPMENT / PORTFOLIO
+          </p>
+          <h1>使いやすさまで考えた<br /><em>Web開発を。</em></h1>
+          <p class="lead">
+            竹田
+            准平です。LaravelでのWebアプリ開発を中心に、既存機能の改善や小さな仕組みづくりに取り組んでいます。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work"
+              >制作物を見る <span aria-hidden="true">↗</span></a
+            ><a class="button secondary" href="#contact"
+              >ご相談について <span aria-hidden="true">↓</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Webアプリの構成を表す装飾図">
+          <div class="art-grid"></div>
+          <div class="art-label top">BUILD WITH PURPOSE</div>
+          <div class="art-window">
+            <div class="window-bar">
+              <i></i><i></i><i></i><span>lifelog / app</span>
+            </div>
+            <div class="window-content">
+              <span class="window-small">01 — PROJECT</span
+              ><strong>LifeLog</strong>
+              <div class="window-line wide"></div>
+              <div class="window-line"></div>
+              <div class="window-cards">
+                <div><b>01</b><small>閲覧</small></div>
+                <div><b>02</b><small>投稿</small></div>
+                <div><b>03</b><small>分類</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="art-label bottom">
+            LARAVEL <span>●</span> MYSQL <span>●</span> UI
+          </div>
+        </div>
+      </section>
 
-    <section class="section work" id="work">
-      <div class="section-heading"><div><p class="section-index">01 / SELECTED WORK</p><h2>制作物</h2></div><p>実際に手を動かして作ったものと、担当した範囲を紹介します。</p></div>
-      <article class="project-card"><div class="project-visual"><div class="demo-frame"><div class="demo-nav"><span>My little archive</span><span>＋ 投稿する</span></div><div class="demo-body"><p>日々のことを、気軽に残す。</p><h3>ライフログ</h3><div class="demo-items"><div><small>日常</small><strong>今日の記録</strong><span>日々の出来事を残すための投稿</span></div><div><small>趣味</small><strong>見つけたこと</strong><span>カテゴリごとに整理して閲覧</span></div></div></div></div></div><div class="project-info"><p class="project-type">個人制作 ・ Webアプリケーション</p><h3>LifeLog</h3><p>日々の出来事をカテゴリごとに記録・閲覧できるWebアプリ。閲覧画面と投稿画面を分け、利用者が迷わず操作できる構成にしました。</p><ul class="project-points"><li>投稿・カテゴリ作成・一覧表示の機能を実装</li><li>画面とコントローラーを役割ごとに分割</li><li>既存のデザインを保ちながら画面構成を改善</li></ul><div class="tags"><span>PHP</span><span>Laravel</span><span>Blade</span><span>MySQL</span></div></div></article>
-      <p class="work-note">※ 掲載内容は個人制作の開発経験です。外部顧客への納品実績としては表示していません。</p>
-    </section>
+      <section class="section work" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">01 / SELECTED WORK</p>
+            <h2>制作物</h2>
+          </div>
+          <p>実際に手を動かして作ったものと、担当した範囲を紹介します。</p>
+        </div>
+        <article class="project-card">
+          <div class="project-visual">
+            <div class="demo-frame">
+              <div class="demo-nav">
+                <span>My little archive</span><span>＋ 投稿する</span>
+              </div>
+              <div class="demo-body">
+                <p>日々のことを、気軽に残す。</p>
+                <h3>ライフログ</h3>
+                <div class="demo-items">
+                  <div>
+                    <small>日常</small><strong>今日の記録</strong
+                    ><span>日々の出来事を残すための投稿</span>
+                  </div>
+                  <div>
+                    <small>趣味</small><strong>見つけたこと</strong
+                    ><span>カテゴリごとに整理して閲覧</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-type">個人制作 ・ Webアプリケーション</p>
+            <h3>LifeLog</h3>
+            <p>
+              日々の出来事をカテゴリごとに記録・閲覧できるWebアプリ。閲覧画面と投稿画面を分け、利用者が迷わず操作できる構成にしました。
+            </p>
+            <ul class="project-points">
+              <li>投稿・カテゴリ作成・一覧表示の機能を実装</li>
+              <li>画面とコントローラーを役割ごとに分割</li>
+              <li>既存のデザインを保ちながら画面構成を改善</li>
+            </ul>
+            <div class="tags">
+              <span>PHP</span><span>Laravel</span><span>Blade</span
+              ><span>MySQL</span>
+            </div>
+          </div>
+        </article>
+        <p class="work-note">
+          ※
+          掲載内容は個人制作の開発経験です。外部顧客への納品実績としては表示していません。
+        </p>
+      </section>
 
-    <section class="section skills" id="skills"><div class="section-heading"><div><p class="section-index">02 / WHAT I DO</p><h2>できること</h2></div><p>小さな改善から、使いやすい仕組みづくりまで。</p></div><div class="skill-grid"><div class="skill-card"><span class="skill-num">01</span><div class="skill-icon">⌘</div><h3>Webアプリの機能開発</h3><p>Laravelを使った投稿・一覧・カテゴリ管理など、データを扱う機能の実装。</p></div><div class="skill-card"><span class="skill-num">02</span><div class="skill-icon">▣</div><h3>既存画面の改善</h3><p>画面の役割や導線を整理し、既存の見た目を生かした使いやすさの改善。</p></div><div class="skill-card"><span class="skill-num">03</span><div class="skill-icon">◇</div><h3>コードの整理</h3><p>機能ごとに処理を分け、修正しやすい構成へ整える作業。</p></div></div></section>
+      <section class="section skills" id="skills">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">02 / WHAT I DO</p>
+            <h2>できること</h2>
+          </div>
+          <p>小さな改善から、使いやすい仕組みづくりまで。</p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <span class="skill-num">01</span>
+            <div class="skill-icon">⌘</div>
+            <h3>Webアプリの機能開発</h3>
+            <p>
+              Laravelを使った投稿・一覧・カテゴリ管理など、データを扱う機能の実装。
+            </p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-num">02</span>
+            <div class="skill-icon">▣</div>
+            <h3>既存画面の改善</h3>
+            <p>
+              画面の役割や導線を整理し、既存の見た目を生かした使いやすさの改善。
+            </p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-num">03</span>
+            <div class="skill-icon">◇</div>
+            <h3>コードの整理</h3>
+            <p>機能ごとに処理を分け、修正しやすい構成へ整える作業。</p>
+          </div>
+        </div>
+      </section>
 
-    <section class="section tech" id="tech">
-      <div class="section-heading"><div><p class="section-index">03 / TECH STACK</p><h2>技術スタック</h2></div><p>制作物で使用した技術を、役割ごとにまとめています。</p></div>
-      <div class="tech-grid">
-        <div class="tech-group"><span class="tech-number">01 / SERVER SIDE</span><h3>バックエンド</h3><div class="tech-tags"><span>PHP</span><span>Laravel</span></div><p>投稿やカテゴリ管理など、データを扱う処理を実装。</p></div>
-        <div class="tech-group"><span class="tech-number">02 / FRONT END</span><h3>フロントエンド</h3><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Blade</span></div><p>画面の表示と操作導線を制作・改善。</p></div>
-        <div class="tech-group"><span class="tech-number">03 / DATABASE</span><h3>データベース</h3><div class="tech-tags"><span>MySQL</span></div><p>投稿とカテゴリを保存・取得する構成で使用。</p></div>
-      </div>
-    </section>
+      <section class="section tech" id="tech">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">03 / TECH STACK</p>
+            <h2>技術スタック</h2>
+          </div>
+          <p>制作物で使用した技術を、役割ごとにまとめています。</p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-group">
+            <span class="tech-number">01 / SERVER SIDE</span>
+            <h3>バックエンド</h3>
+            <div class="tech-tags"><span>PHP</span><span>Laravel</span><span>Python</span></div>
+            <p>投稿やカテゴリ管理など、データを扱う処理を実装。</p>
+          </div>
+          <div class="tech-group">
+            <span class="tech-number">02 / FRONT END</span>
+            <h3>フロントエンド</h3>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span
+              ><span>Blade</span>
+            </div>
+            <p>画面の表示と操作導線を制作・改善。</p>
+          </div>
+          <div class="tech-group">
+            <span class="tech-number">03 / DATABASE</span>
+            <h3>データベース</h3>
+            <div class="tech-tags"><span>MySQL</span></div>
+            <p>投稿とカテゴリを保存・取得する構成で使用。</p>
+          </div>
+          <div class="tech-group">
+            <span class="tech-number">04 / OTHER</span>
+            <h3>その他</h3>
+            <div class="tech-tags"><span>Git</span><span>Linux</span><span>Docker</span><span>VM</span><span>Arduino</span></div>
+            <p>バージョン管理やサーバー環境の構築に使用。</p>
+          </div>
+        </div>
+      </section>
 
-    <section class="section about" id="about"><div><p class="section-index">04 / ABOUT ME</p><h2>プロフィール</h2></div><div class="about-copy"><p class="about-intro">竹田 准平 <span>Junpei Takeda</span></p><p>大学でソフトウェアを学びながら、Webアプリケーションの制作に取り組んでいます。利用者が何をしたいかを考え、画面と処理の両方を整えることを大切にしています。</p><div class="about-facts"><div><span>学び</span><strong>ソフトウェア分野</strong></div><div><span>資格</span><strong>基本情報技術者</strong></div><div><span>現在</span><strong>応用情報技術者を学習中</strong></div></div></div></section>
+      <section class="section about" id="about">
+        <div>
+          <p class="section-index">04 / ABOUT ME</p>
+          <h2>プロフィール</h2>
+        </div>
+        <div class="about-copy">
+          <p class="about-intro">竹田 准平 <span>Junpei Takeda</span></p>
+          <p>
+            大学でソフトウェアを学びながら、Webアプリケーションの制作に取り組んでいます。利用者が何をしたいかを考え、画面と処理の両方を整えることを大切にしています。
+          </p>
+          <div class="about-facts">
+            <div><span>学び</span><strong>ソフトウェア分野</strong></div>
+            <div><span>資格</span><strong>基本情報技術者</strong></div>
+            <div><span>現在</span><strong>応用情報技術者を学習中</strong></div>
+          </div>
+        </div>
+      </section>
 
-    <section class="contact" id="contact"><div><p class="section-index">05 / CONTACT</p><h2>小さな相談から、<br>一緒に考えます。</h2></div><div class="contact-side"><p>Laravelの機能追加、既存画面の整理、Webアプリの制作についてご相談ください。内容と希望時期を伺い、対応できる範囲をお伝えします。</p><p class="contact-status">連絡先は現在準備中です。公開前にメールアドレスまたはご希望の相談窓口を設定します。</p></div></section>
-  </main>
-  <footer><span>© 2026 Junpei Takeda</span><a href="#top">ページ上部へ ↑</a></footer>
-</body>
+      <section class="contact" id="contact">
+        <div>
+          <p class="section-index">05 / CONTACT</p>
+          <h2>小さな相談から、<br />一緒に考えます。</h2>
+        </div>
+        <div class="contact-side">
+          <p>
+            Laravelの機能追加、既存画面の整理、Webアプリの制作についてご相談ください。内容と希望時期を伺い、対応できる範囲をお伝えします。
+          </p>
+          <p class="contact-status">
+            連絡先は現在準備中です。公開前にメールアドレスまたはご希望の相談窓口を設定します。
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>© 2026 Junpei Takeda</span><a href="#top">ページ上部へ ↑</a>
+    </footer>
+  </body>
 </html>
